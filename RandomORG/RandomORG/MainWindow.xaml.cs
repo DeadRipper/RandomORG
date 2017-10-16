@@ -25,15 +25,26 @@ namespace RandomORG
         private void generatebuton_Click(object sender, RoutedEventArgs e)
         {
 
-            if (mintext.Text.Length > maxtext.Text.Length)
+            /*if (mintext.Text.Length > mintext.Text.Length)
                 {
                     MessageBox.Show("Напишите число по меньше");
-                }
+                }*/
+            Random r = new Random();
+            restext.Text = r.Next(Convert.ToInt32(maxtext.Text) - (Convert.ToInt32(minimum.Text))).ToString();
         }
-        private void mintext_KeyPress(object sender, KeyPressEventArgs e)
+
+        private void mintext_TextChanged(object sender, TextCompositionEventArgs e)
+        {
+            try
             {
-            if ((e.KeyChar <= 48 || e.KeyChar >= 59) && e.KeyChar != 8)
-                e.Handled = true;
+                Convert.ToInt32(minimum.Text);
+                MessageBox.Show("Vvedite chislo");
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Vvedenno ne chislo");
+            }
+            minimum.Clear();
         }
     }
 }

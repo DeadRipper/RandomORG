@@ -8,7 +8,7 @@
         Title="MainWindow" Height="242" Width="248">
     <Grid Margin="-35,0,-26,-31">
         <Button x:Name="generatebuton" Content="Generate" HorizontalAlignment="Left" Margin="42,132,0,0" VerticalAlignment="Top" Width="213" Click="generatebuton_Click"/>
-        <TextBox x:Name="mintext" HorizontalAlignment="Left" Height="23" Margin="78,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177"/>
+        <TextBox x:Name="minimum" HorizontalAlignment="Left" Height="23" Margin="78,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177"/>
         <TextBox x:Name="maxtext" HorizontalAlignment="Left" Height="23" Margin="79,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
         <Button x:Name="newbutton" Content="New" HorizontalAlignment="Left" Margin="42,157,0,0" VerticalAlignment="Top" Width="213"/>
         <Label Content="Res:" HorizontalAlignment="Left" Margin="42,91,0,0" VerticalAlignment="Top"/>
