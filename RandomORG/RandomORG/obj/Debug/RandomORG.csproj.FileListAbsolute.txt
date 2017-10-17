@@ -13,3 +13,5 @@ C:\Users\DeathWish\Documents\Visual Studio 2017\Projects\RandomORG\RandomORG\obj
 C:\Users\DeathWish\Documents\Visual Studio 2017\Projects\RandomORG\RandomORG\obj\Debug\RandomORG.csproj.CoreCompileInputs.cache
 C:\Users\DeathWish\Documents\Visual Studio 2017\Projects\RandomORG\RandomORG\obj\Debug\RandomORG.exe
 C:\Users\DeathWish\Documents\Visual Studio 2017\Projects\RandomORG\RandomORG\obj\Debug\RandomORG.pdb
+C:\Users\DeathWish\Documents\Visual Studio 2017\Projects\RandomORG\RandomORG\obj\Debug\DecWindow.g.cs
+C:\Users\DeathWish\Documents\Visual Studio 2017\Projects\RandomORG\RandomORG\obj\Debug\DecWindow.baml

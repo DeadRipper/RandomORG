@@ -1,0 +1,31 @@
+﻿<Window x:Class="RandomORG.DecWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RandomORG"
+        mc:Ignorable="d"
+        Title="DecWindow" Height="253.185" Width="241.72">
+    <Grid>
+        <Button x:Name="generdec" Content="Generate" HorizontalAlignment="Left" Margin="10,162,0,0" VerticalAlignment="Top" Width="213" Click="generdec_Button_Click"/>
+        <TextBox x:Name="mindec" HorizontalAlignment="Left" Height="23" Margin="46,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177"/>
+        <TextBox x:Name="maxdec" HorizontalAlignment="Left" Height="23" Margin="47,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+        <Button x:Name="newdec" Content="New" HorizontalAlignment="Left" Margin="10,187,0,0" VerticalAlignment="Top" Width="213" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.009"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Label Content="Res:" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="resdec" HorizontalAlignment="Left" Height="23" Margin="46,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177"/>
+        <Label Content="Min:" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top"/>
+        <Label Content="Max:" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="celdec" Content="Целые" HorizontalAlignment="Left" Margin="46,15,0,0" VerticalAlignment="Top" Width="72" Click="celdec_Button_Click"/>
+        <Button x:Name="back" Content="Назад" HorizontalAlignment="Left" Margin="148,15,0,0" VerticalAlignment="Top" Width="75" Click="back_Click"/>
+
+    </Grid>
+</Window>

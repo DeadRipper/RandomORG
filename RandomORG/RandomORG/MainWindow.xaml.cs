@@ -22,6 +22,7 @@ namespace RandomORG
         {
             InitializeComponent();
         }
+
         private void generatebuton_Click(object sender, RoutedEventArgs e)
         {
 
@@ -45,6 +46,19 @@ namespace RandomORG
                 MessageBox.Show("Vvedenno ne chislo");
             }
             minimum.Clear();
+        }
+
+        private void decbutton_Click_1(object sender, RoutedEventArgs e)
+        {
+            DecWindow a = new DecWindow();
+            a.ShowDialog();
+        }
+
+        private void newbutton_Click(object sender, RoutedEventArgs e)
+        {
+            maxtext.Clear();
+            minimum.Clear();
+            restext.Clear();
         }
     }
 }
