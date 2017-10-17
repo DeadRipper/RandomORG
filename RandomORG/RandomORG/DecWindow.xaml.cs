@@ -23,13 +23,11 @@ namespace RandomORG
         {
             InitializeComponent();
         }
-
         
-
         private void generdec_Button_Click(object sender, RoutedEventArgs e)
         {
             Random r = new Random();
-            //resdec.Text = r.Next(Convert.ToDouble(maxdec.Text) - (Convert.ToDouble(mindec.Text))).ToString();
+            resdec.Text = (r.NextDouble()*(Convert.ToDouble(maxdec.Text) - (Convert.ToDouble(mindec.Text)))+ Convert.ToDouble(mindec.Text)).ToString();
         }
 
         private void celdec_Button_Click(object sender, RoutedEventArgs e)

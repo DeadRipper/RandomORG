@@ -31,7 +31,7 @@ namespace RandomORG
                     MessageBox.Show("Напишите число по меньше");
                 }*/
             Random r = new Random();
-            restext.Text = r.Next(Convert.ToInt32(maxtext.Text) - (Convert.ToInt32(minimum.Text))).ToString();
+            restext.Text = (r.Next(Convert.ToInt32(maxtext.Text) - (Convert.ToInt32(minimum.Text))+1)+Convert.ToInt32(minimum.Text)).ToString();
         }
 
         private void mintext_TextChanged(object sender, TextCompositionEventArgs e)
