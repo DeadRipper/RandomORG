@@ -15,3 +15,20 @@ C:\Users\DeathWish\Documents\Visual Studio 2017\Projects\RandomORG\RandomORG\obj
 C:\Users\DeathWish\Documents\Visual Studio 2017\Projects\RandomORG\RandomORG\obj\Debug\RandomORG.pdb
 C:\Users\DeathWish\Documents\Visual Studio 2017\Projects\RandomORG\RandomORG\obj\Debug\DecWindow.g.cs
 C:\Users\DeathWish\Documents\Visual Studio 2017\Projects\RandomORG\RandomORG\obj\Debug\DecWindow.baml
+C:\Users\DeathWish\Source\Repos\RandomORG\RandomORG\RandomORG\bin\Debug\RandomORG.exe.config
+C:\Users\DeathWish\Source\Repos\RandomORG\RandomORG\RandomORG\bin\Debug\RandomORG.exe
+C:\Users\DeathWish\Source\Repos\RandomORG\RandomORG\RandomORG\bin\Debug\RandomORG.pdb
+C:\Users\DeathWish\Source\Repos\RandomORG\RandomORG\RandomORG\obj\Debug\RandomORG.csprojResolveAssemblyReference.cache
+C:\Users\DeathWish\Source\Repos\RandomORG\RandomORG\RandomORG\obj\Debug\DecWindow.g.cs
+C:\Users\DeathWish\Source\Repos\RandomORG\RandomORG\RandomORG\obj\Debug\MainWindow.g.cs
+C:\Users\DeathWish\Source\Repos\RandomORG\RandomORG\RandomORG\obj\Debug\App.g.cs
+C:\Users\DeathWish\Source\Repos\RandomORG\RandomORG\RandomORG\obj\Debug\RandomORG_MarkupCompile.cache
+C:\Users\DeathWish\Source\Repos\RandomORG\RandomORG\RandomORG\obj\Debug\RandomORG_MarkupCompile.lref
+C:\Users\DeathWish\Source\Repos\RandomORG\RandomORG\RandomORG\obj\Debug\DecWindow.baml
+C:\Users\DeathWish\Source\Repos\RandomORG\RandomORG\RandomORG\obj\Debug\MainWindow.baml
+C:\Users\DeathWish\Source\Repos\RandomORG\RandomORG\RandomORG\obj\Debug\RandomORG.g.resources
+C:\Users\DeathWish\Source\Repos\RandomORG\RandomORG\RandomORG\obj\Debug\RandomORG.Properties.Resources.resources
+C:\Users\DeathWish\Source\Repos\RandomORG\RandomORG\RandomORG\obj\Debug\RandomORG.csproj.GenerateResource.Cache
+C:\Users\DeathWish\Source\Repos\RandomORG\RandomORG\RandomORG\obj\Debug\RandomORG.csproj.CoreCompileInputs.cache
+C:\Users\DeathWish\Source\Repos\RandomORG\RandomORG\RandomORG\obj\Debug\RandomORG.exe
+C:\Users\DeathWish\Source\Repos\RandomORG\RandomORG\RandomORG\obj\Debug\RandomORG.pdb

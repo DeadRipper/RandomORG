@@ -24,7 +24,7 @@
         <TextBox x:Name="resdec" HorizontalAlignment="Left" Height="23" Margin="46,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177"/>
         <Label Content="Min:" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top"/>
         <Label Content="Max:" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="celdec" Content="Целые" HorizontalAlignment="Left" Margin="46,15,0,0" VerticalAlignment="Top" Width="72" Click="celdec_Button_Click"/>
+        <Button x:Name="celdec" Content="Целые" HorizontalAlignment="Left" Margin="46,15,0,0" VerticalAlignment="Top" Width="72"/>
         <Button x:Name="back" Content="Назад" HorizontalAlignment="Left" Margin="148,15,0,0" VerticalAlignment="Top" Width="75" Click="back_Click"/>
 
     </Grid>

@@ -30,11 +30,6 @@ namespace RandomORG
             resdec.Text = (r.NextDouble()*(Convert.ToDouble(maxdec.Text) - (Convert.ToDouble(mindec.Text)))+ Convert.ToDouble(mindec.Text)).ToString();
         }
 
-        private void celdec_Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
-
         private void back_Click(object sender, RoutedEventArgs e)
         {
             MainWindow a = new MainWindow();

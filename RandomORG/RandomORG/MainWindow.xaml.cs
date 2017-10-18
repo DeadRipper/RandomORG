@@ -25,18 +25,17 @@ namespace RandomORG
 
         private void generatebuton_Click(object sender, RoutedEventArgs e)
         {
-
-            /*if (mintext.Text.Length > mintext.Text.Length)
-                {
-                    MessageBox.Show("Напишите число по меньше");
-                }*/
             Random r = new Random();
-            restext.Text = (r.Next(Convert.ToInt32(maxtext.Text) - (Convert.ToInt32(minimum.Text))+1)+Convert.ToInt32(minimum.Text)).ToString();
+            restext.Text = (r.Next(Convert.ToInt32(maxtext.Text) - (Convert.ToInt32(minimum.Text)) + 1) + Convert.ToInt32(minimum.Text)).ToString();
+            if (minimum.Text.Equals(maxtext.Text))
+            {
+                MessageBox.Show("Vvedite chislo menshe max");
+            }
         }
 
         private void mintext_TextChanged(object sender, TextCompositionEventArgs e)
         {
-            try
+            /*try
             {
                 Convert.ToInt32(minimum.Text);
                 MessageBox.Show("Vvedite chislo");
@@ -45,13 +44,7 @@ namespace RandomORG
             {
                 MessageBox.Show("Vvedenno ne chislo");
             }
-            minimum.Clear();
-        }
-
-        private void decbutton_Click_1(object sender, RoutedEventArgs e)
-        {
-            DecWindow a = new DecWindow();
-            a.ShowDialog();
+            minimum.Clear();*/
         }
 
         private void newbutton_Click(object sender, RoutedEventArgs e)
@@ -60,5 +53,19 @@ namespace RandomORG
             minimum.Clear();
             restext.Clear();
         }
+
+        private void generdec_Click(object sender, RoutedEventArgs e)
+        {
+            Random r = new Random();
+            resdec.Text = (r.NextDouble() * (Convert.ToDouble(maxdec.Text) - (Convert.ToDouble(mindec.Text))) + Convert.ToDouble(mindec.Text)).ToString();
+        }
+
+        private void decbutton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
     }
+
 }
+
