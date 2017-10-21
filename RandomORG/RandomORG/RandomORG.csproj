@@ -54,9 +54,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CoinFlip.xaml.cs">
+      <DependentUpon>CoinFlip.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Program.xaml.cs">
       <DependentUpon>Program.xaml</DependentUpon>
     </Compile>
+    <Page Include="CoinFlip.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="DecWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -109,6 +116,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="System\Windows\Threading\" />
+  </ItemGroup>
+  <ItemGroup>
+    <SplashScreen Include="Resources\moneta-animatsionnaya-kartinka-0021.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
