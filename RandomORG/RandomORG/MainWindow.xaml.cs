@@ -29,6 +29,13 @@ namespace RandomORG
             this.Close();
             window.ShowDialog();
         }
+
+        private void flipbutton_Click(object sender, RoutedEventArgs e)
+        {
+            CoinFlip window = new CoinFlip();
+            this.Close();
+            window.ShowDialog();
+        }
     }
 
 }

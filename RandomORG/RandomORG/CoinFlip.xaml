@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="CoinFlip" Height="300" Width="300">
     <Grid>
-        
+        <Button x:Name="back" Content="X" Margin="266,0,0,0" VerticalAlignment="Top" Height="16" Click="back_Click"/>
+        <Button x:Name="flipbutton" Content="Flip" HorizontalAlignment="Left" Margin="81,231,0,0" VerticalAlignment="Top" Width="132" Click="flipbutton_Click"/>
+        <TextBox x:Name="fliptext" HorizontalAlignment="Left" Height="23" Margin="81,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" TextChanged="fliptext_TextChanged"/>
+
     </Grid>
 </Window>

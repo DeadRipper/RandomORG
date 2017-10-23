@@ -61,8 +61,6 @@ namespace RandomORG {
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "4.0.0.0")]
         public static void Main() {
-            SplashScreen splashScreen = new SplashScreen("resources/moneta-animatsionnaya-kartinka-0021.png");
-            splashScreen.Show(true);
             RandomORG.App app = new RandomORG.App();
             app.InitializeComponent();
             app.Run();

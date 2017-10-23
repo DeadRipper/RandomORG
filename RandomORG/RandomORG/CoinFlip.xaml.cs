@@ -23,5 +23,37 @@ namespace RandomORG
         {
             InitializeComponent();
         }
+
+        private void back_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow window = new MainWindow();
+            this.Close();
+            window.ShowDialog();
+        }
+        private static Random rand = new Random();
+        public static string RandomString(int lenght)
+        {
+            const string chars = "Head, Tail";
+            return new string(Enumerable.Repeat(chars, lenght).Select(s => s[rand.Next(s.Length)]).ToArray());
+        }
+
+
+        private void fliptext_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
+        }
+
+        private void flipbutton_Click(object sender, EventArgs e)
+        {
+            WriteTextBox(Controls["fliptext"], "Head");
+        }
+
+        public void WriteTextBox(Control tb, string text)
+        {
+            if (tb is TextBox)
+                tb.Text = text;
+            else
+                MessageBox.Show("Hrn'");
+        }
     }
 }
