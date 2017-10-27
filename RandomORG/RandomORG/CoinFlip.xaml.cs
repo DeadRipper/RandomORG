@@ -31,18 +31,19 @@ namespace RandomORG
             window.ShowDialog();
         }
 
-        public void Obschet()
-        {
-        Random rand = new Random();
-        for (int i=0; i<1;)
-             {
-                rand.Next(0, 1);
-             }
-        }
-
         private void flipbutton_Click(object sender, EventArgs e)
         {
-
+            int a;
+            Random rand = new Random();
+            a = rand.Next(Convert.ToInt32(2) - Convert.ToInt32(0));
+            if (a==0)
+                {
+                    fliptext.Text = "Head";
+                }
+            else
+                { 
+                    fliptext.Text = "Tail";
+                }
+            }
         }
     }
-}
