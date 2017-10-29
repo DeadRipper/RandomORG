@@ -112,7 +112,9 @@
     <Folder Include="System\Windows\Threading\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="myGif.gif" />
+    <Resource Include="myGif.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,21 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RandomORG"
         mc:Ignorable="d"
-        Title="RandomORG" Height="247.452" Width="287.483">
+        Title="RandomORG" Height="208.837" Width="287.483">
     <Grid>
         <Button x:Name="generatebuton" Content="Generate" HorizontalAlignment="Left" Margin="23,146,0,0" VerticalAlignment="Top" Width="213" Click="generatebuton_Click"/>
-        <TextBox x:Name="minimum" HorizontalAlignment="Left" Height="23" Margin="61,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" Text="{Binding mintext_TextChanged, NotifyOnValidationError=true, UpdateSourceTrigger=PropertyChanged, ValidatesOnExceptions=true}"/>
+        <TextBox x:Name="minimum" HorizontalAlignment="Left" Height="23" Margin="61,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" Text="{Binding mintext_TextChanged, NotifyOnValidationError=true, UpdateSourceTrigger=PropertyChanged, ValidatesOnExceptions=true}" TextChanged="minimum_TextChanged"/>
         <TextBox x:Name="maxtext" HorizontalAlignment="Left" Height="23" Margin="63,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
-        <Button x:Name="newbutton" Content="New" HorizontalAlignment="Left" Margin="23,171,0,0" VerticalAlignment="Top" Width="213" RenderTransformOrigin="0.5,0.5" Click="newbutton_Click">
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-0.009"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Button.RenderTransform>
-        </Button>
         <Label Content="Res:" HorizontalAlignment="Left" Margin="23,105,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="restext" HorizontalAlignment="Left" Height="23" Margin="59,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177"/>
         <Label Content="Min:" HorizontalAlignment="Left" Margin="23,21,0,0" VerticalAlignment="Top"/>

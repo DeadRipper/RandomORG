@@ -42,18 +42,27 @@ namespace RandomORG
             }
         }
 
-        private void newbutton_Click(object sender, RoutedEventArgs e)
-        {
-            maxtext.Clear();
-            minimum.Clear();
-            restext.Clear();
-        }
-
         private void backbutton_Click(object sender, RoutedEventArgs e)
         {
             MainWindow window = new MainWindow();
             this.Close();
             window.ShowDialog();
+        }
+
+        private void minimum_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            int parsedValue;
+            double parsedValueDob;
+            if (!int.TryParse(minimum.Text, out parsedValue))
+                if (!double.TryParse(minimum.Text, out parsedValueDob))
+                {
+                    minimum.Clear();
+                }
+                else
+                {
+                    return;
+                }
+            return;
         }
     }
 }
