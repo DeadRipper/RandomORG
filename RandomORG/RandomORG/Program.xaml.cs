@@ -26,26 +26,20 @@ namespace RandomORG
 
         private void generatebuton_Click(object sender, RoutedEventArgs e)
         {
+            int i;
+            double b;
+            bool IsInt = int.TryParse(minimum.Text, out i);
+            bool isDouble = Double.TryParse(minimum.Text, out b);
             Random r = new Random();
-            restext.Text = (r.Next(Convert.ToInt32(maxtext.Text) - (Convert.ToInt32(minimum.Text)) + 1) + Convert.ToInt32(minimum.Text)).ToString();
-            if (minimum.Text.Equals(maxtext.Text))
+            if (IsInt)
             {
-                MessageBox.Show("Vvedite chislo menshe max");
+                restext.Text = (r.Next(Convert.ToInt32(maxtext.Text) - (Convert.ToInt32(minimum.Text)) + 1) + Convert.ToInt32(minimum.Text)).ToString();
             }
-        }
+            else if(isDouble)
+            {
+                restext.Text = (r.NextDouble() * (Convert.ToDouble(maxtext.Text) - (Convert.ToDouble(minimum.Text))) + Convert.ToDouble(minimum.Text)).ToString();
 
-        private void mintext_TextChanged(object sender, TextCompositionEventArgs e)
-        {
-            /*try
-            {
-                Convert.ToInt32(minimum.Text);
-                MessageBox.Show("Vvedite chislo");
             }
-            catch (FormatException)
-            {
-                MessageBox.Show("Vvedenno ne chislo");
-            }
-            minimum.Clear();*/
         }
 
         private void newbutton_Click(object sender, RoutedEventArgs e)
@@ -53,17 +47,6 @@ namespace RandomORG
             maxtext.Clear();
             minimum.Clear();
             restext.Clear();
-        }
-
-        private void generdec_Click(object sender, RoutedEventArgs e)
-        {
-            Random r = new Random();
-            resdec.Text = (r.NextDouble() * (Convert.ToDouble(maxdec.Text) - (Convert.ToDouble(mindec.Text))) + Convert.ToDouble(mindec.Text)).ToString();
-        }
-
-        private void decbutton_Click(object sender, RoutedEventArgs e)
-        {
-
         }
 
         private void backbutton_Click(object sender, RoutedEventArgs e)

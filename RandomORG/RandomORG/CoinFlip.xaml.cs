@@ -36,14 +36,22 @@ namespace RandomORG
             int a;
             Random rand = new Random();
             a = rand.Next(Convert.ToInt32(2) - Convert.ToInt32(0));
-            if (a==0)
-                {
-                    fliptext.Text = "Head";
-                }
-            else
-                { 
-                    fliptext.Text = "Tail";
-                }
+            if (a == 0)
+            {
+                fliptext.Text = "Head";
             }
+            else
+            {
+                fliptext.Text = "Tail";
+            }
+            myGif.Play();
+            
+        }
+
+        private void myGif_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            myGif.Position = new TimeSpan(0);
+            myGif.Pause();
         }
     }
+}

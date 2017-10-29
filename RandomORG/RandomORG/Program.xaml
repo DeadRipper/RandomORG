@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RandomORG"
         mc:Ignorable="d"
-        Title="RandomORG" Height="247.452" Width="525.478">
+        Title="RandomORG" Height="247.452" Width="287.483">
     <Grid>
-        <Button x:Name="generatebuton" Content="Generate" HorizontalAlignment="Left" Margin="24,157,0,0" VerticalAlignment="Top" Width="213" Click="generatebuton_Click"/>
-        <TextBox x:Name="minimum" HorizontalAlignment="Left" Height="23" Margin="62,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" Text="{Binding mintext_TextChanged, NotifyOnValidationError=true, UpdateSourceTrigger=PropertyChanged, ValidatesOnExceptions=true}"/>
-        <TextBox x:Name="maxtext" HorizontalAlignment="Left" Height="23" Margin="64,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
-        <Button x:Name="newbutton" Content="New" HorizontalAlignment="Left" Margin="24,182,0,0" VerticalAlignment="Top" Width="213" RenderTransformOrigin="0.5,0.5" Click="newbutton_Click">
+        <Button x:Name="generatebuton" Content="Generate" HorizontalAlignment="Left" Margin="23,146,0,0" VerticalAlignment="Top" Width="213" Click="generatebuton_Click"/>
+        <TextBox x:Name="minimum" HorizontalAlignment="Left" Height="23" Margin="61,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" Text="{Binding mintext_TextChanged, NotifyOnValidationError=true, UpdateSourceTrigger=PropertyChanged, ValidatesOnExceptions=true}"/>
+        <TextBox x:Name="maxtext" HorizontalAlignment="Left" Height="23" Margin="63,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+        <Button x:Name="newbutton" Content="New" HorizontalAlignment="Left" Margin="23,171,0,0" VerticalAlignment="Top" Width="213" RenderTransformOrigin="0.5,0.5" Click="newbutton_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -20,30 +20,11 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Label Content="Res:" HorizontalAlignment="Left" Margin="24,116,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="restext" HorizontalAlignment="Left" Height="23" Margin="60,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177"/>
-        <Label Content="Min:" HorizontalAlignment="Left" Margin="24,32,0,0" VerticalAlignment="Top"/>
-        <Label Content="Max:" HorizontalAlignment="Left" Margin="24,71,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="decbutton" Content="Десятичные" HorizontalAlignment="Left" Margin="367,11,0,0" VerticalAlignment="Top" Width="75" Click="decbutton_Click" />
-        <Button x:Name="generdec" Content="Generate" HorizontalAlignment="Left" Margin="281,158,0,0" VerticalAlignment="Top" Width="213" Click="generdec_Click"/>
-        <TextBox x:Name="mindec" HorizontalAlignment="Left" Height="23" Margin="317,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177"/>
-        <TextBox x:Name="maxdec" HorizontalAlignment="Left" Height="23" Margin="318,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
-        <Button x:Name="newdec" Content="New" HorizontalAlignment="Left" Margin="281,183,0,0" VerticalAlignment="Top" Width="213" RenderTransformOrigin="0.5,0.5">
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-0.009"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Button.RenderTransform>
-        </Button>
-        <Label Content="Res:" HorizontalAlignment="Left" Margin="281,117,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="resdec" HorizontalAlignment="Left" Height="23" Margin="317,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177"/>
-        <Label Content="Min:" HorizontalAlignment="Left" Margin="281,33,0,0" VerticalAlignment="Top"/>
-        <Label Content="Max:" HorizontalAlignment="Left" Margin="281,72,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="celdec" Content="Целые" HorizontalAlignment="Left" Margin="107,10,0,0" VerticalAlignment="Top" Width="72"/>
-        <Button x:Name="backbutton" Content="X" HorizontalAlignment="Left" Margin="487,0,0,0" VerticalAlignment="Top" Width="30" Click="backbutton_Click"/>
+        <Label Content="Res:" HorizontalAlignment="Left" Margin="23,105,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="restext" HorizontalAlignment="Left" Height="23" Margin="59,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177"/>
+        <Label Content="Min:" HorizontalAlignment="Left" Margin="23,21,0,0" VerticalAlignment="Top"/>
+        <Label Content="Max:" HorizontalAlignment="Left" Margin="23,60,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="backbutton" Content="X" HorizontalAlignment="Left" Margin="247,0,0,0" VerticalAlignment="Top" Width="30" Click="backbutton_Click"/>
 
     </Grid>
 </Window>

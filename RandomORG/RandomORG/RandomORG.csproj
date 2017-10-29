@@ -111,5 +111,8 @@
     <Folder Include="Resources\" />
     <Folder Include="System\Windows\Threading\" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="myGif.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
