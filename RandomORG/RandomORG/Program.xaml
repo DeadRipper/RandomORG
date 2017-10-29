@@ -8,10 +8,10 @@
         Title="RandomORG" Height="208.837" Width="287.483">
     <Grid>
         <Button x:Name="generatebuton" Content="Generate" HorizontalAlignment="Left" Margin="23,146,0,0" VerticalAlignment="Top" Width="213" Click="generatebuton_Click"/>
-        <TextBox x:Name="minimum" HorizontalAlignment="Left" Height="23" Margin="61,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" Text="{Binding mintext_TextChanged, NotifyOnValidationError=true, UpdateSourceTrigger=PropertyChanged, ValidatesOnExceptions=true}" TextChanged="minimum_TextChanged"/>
-        <TextBox x:Name="maxtext" HorizontalAlignment="Left" Height="23" Margin="63,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+        <TextBox x:Name="minimum" HorizontalAlignment="Left" Height="23" Margin="59,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" Text="{Binding mintext_TextChanged, NotifyOnValidationError=true, UpdateSourceTrigger=PropertyChanged, ValidatesOnExceptions=true}" TextChanged="minimum_TextChanged"/>
+        <TextBox x:Name="maxtext" HorizontalAlignment="Left" Height="23" Margin="59,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" TextChanged="maxtext_TextChanged"/>
         <Label Content="Res:" HorizontalAlignment="Left" Margin="23,105,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="restext" HorizontalAlignment="Left" Height="23" Margin="59,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177"/>
+        <TextBox x:Name="restext" HorizontalAlignment="Left" Height="23" Margin="59,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" TextChanged="restext_TextChanged"/>
         <Label Content="Min:" HorizontalAlignment="Left" Margin="23,21,0,0" VerticalAlignment="Top"/>
         <Label Content="Max:" HorizontalAlignment="Left" Margin="23,60,0,0" VerticalAlignment="Top"/>
         <Button x:Name="backbutton" Content="X" HorizontalAlignment="Left" Margin="247,0,0,0" VerticalAlignment="Top" Width="30" Click="backbutton_Click"/>

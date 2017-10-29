@@ -64,5 +64,40 @@ namespace RandomORG
                 }
             return;
         }
+
+        private void maxtext_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            int parsedValue;
+            double parsedValueDob;
+            if (!int.TryParse(maxtext.Text, out parsedValue))
+                if (!double.TryParse(maxtext.Text, out parsedValueDob))
+                {
+                    maxtext.Clear();
+                }
+                else
+                {
+                    return;
+                }
+            return;
+        }
+
+        private void restext_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            int parsedValue;
+            double parsedValueDob;
+            string parsedValueStr;
+            if (!int.TryParse(minimum.Text, out parsedValue))
+                if (!double.TryParse(minimum.Text, out parsedValueDob))
+                    //if(!string.TryParse(minimum.Text, out parsedValueStr))
+                {
+                    minimum.Clear();
+                }
+                else
+                {
+                    return;
+                }
+            return;
+        }
     }
+    
 }
