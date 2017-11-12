@@ -1,0 +1,18 @@
+﻿<Window x:Class="RandomORG.CoinFlip"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RandomORG"
+        mc:Ignorable="d"
+        Title="CoinFlip" Height="300" Width="300">
+
+    <Grid Margin="0,0,0,-21">
+        <Button x:Name="back" Content="X" Margin="266,0,0,0" VerticalAlignment="Top" Height="16" Click="back_Click"/>
+        <Button x:Name="flipbutton" Content="Flip" HorizontalAlignment="Left" Margin="81,231,0,0" VerticalAlignment="Top" Width="132" Click="flipbutton_Click"/>
+        <TextBox x:Name="fliptext" HorizontalAlignment="Left" Height="23" Margin="81,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="132"/>
+        <Image HorizontalAlignment="Left" Height="163" Margin="37,18,0,0" VerticalAlignment="Top" Width="207"/>
+        <MediaElement x:Name="myGif" MediaEnded="myGif_MediaEnded" UnloadedBehavior="Stop" Source="file://C:\Users\DeathWish\Source\Repos\RandomORG\RandomORG\RandomORG\myGif.gif" LoadedBehavior="Manual" Margin="68,31,63,109" SpeedRatio="11" Cursor="Wait" Opacity="10000" Stretch="None" StretchDirection="UpOnly"/>
+
+    </Grid>
+</Window>
